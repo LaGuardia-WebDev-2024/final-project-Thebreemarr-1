@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<title>Image Text Hover Overlay</title> <link rel="shortcut icon" href="/dcode/assets/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="/src/main.css">
+   <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    body{
+    background-color: rgb(180, 217, 239);
+    padding-top: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: rgb(180, 217, 239);
+    font-size: 20px;
+    width: 100%;
+    max-width: 100vw;
+    height: 100%;
+    min-height: 100%;
+}
+    .image{
+      position: relative; 
+      width: 220px;
+      margin: auto;
+      align-items: center; 
+       
+      margin-top: 50px;
+      
+    }
+    .image_img{
+      display: block; 
+      
+      width: 220px;
+      height: 330px;
+      overflow: hidden;
+      object-fit: contain;
+      justify-content: center;
+      margin: auto;
+       background-color: black;
+      
+    }
+    .image__overlay{
+      position: absolute; 
+      top: 0;
+      left: 0;
+      width: 220px;
+      height: 330px;
+      background: rgba(0,0,0,0.3);
+      color: white; 
+      display: flex; 
+      font-family: 'Quicksand', sans-serif;
+      flex-direction: column; 
+      align-items: center; 
+      justify-content: center; 
+      opacity:0;
+      transition: opacity 0.25s
+    }
+    .image__overlay > * {
+      transform: translateY(20px);
+      transition: transform 0.25s;
+    }
+    .image__overlay:hover{
+      opacity:1; 
+      
+    }
+    .image__overlay:hover > * {
+      transform: translateY(0);
+      transition: transform 0.25s;
+    }
+    .image__title {
+      font-size: 1em; 
+      font-weight: bold;   
+      align-items: center; 
+      
+      text-align: center; 
+    }
+    .image__description: {
+    font-size: 1.25em; 
+      margin-top: 11em;
+      text-align: center; 
+      align-items: center;
+      margin: auto; 
+    }
+    .row {
+       
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    margin-left:8%;
+      margin-right:8%; 
+      }
+    
+    .hip2hip-logo {
+      float: left; 
+      position: relative;
+      
+      width:200px;
+      bottom: 20%;
+      margin-left: 10px; 
+      margin-top: 95px;
+      z-index: 2;
+    }
+    
+    .entire-gallery{
+      position: absolute;
+      margin:20px; 
+      margin-top: 100px; 
+      width: 100%;
+       display: block;
+      z-index: 1;
+     
+    }
+    .center-title {
+      align-items: center; 
+      text-align: center; 
+      margin-bottom: 30px; 
+      display: block;
+      position: absolute; 
+      margin: auto; 
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <ul class="nav">
+      <li><a href="index.html" id="home">Home</a></li>
+
+    
+      <li style="float: right" class="blobimg">
+        <a target="_blank" href=""
+          ><img
+            src="https://mystickermania.com/cdn/stickers/animals/blobfish-512x512.png"
+            style="width: 45px; margin: -10px"
+        /></a></li>  
+       
+      <li style="float: right" ><a  href="socialmedia.html">Social media</a></li>
+      <li style="float: right"><a  href="websites.html">Websites</a></li>
+      <li style="float: right"><a class="active" href="actingwork.html">Acting Work</a></li>
+      <li style="float: right"><a href="aboutme.html">About Me</a></li>
+      
+    </ul>
+   <br />
+    <br />
+    
+     <div class="hip2hip-logo">
+     <img class="hip2hip-logo" src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/addf23e7-8da9-459c-be53-4a1ef9bbb40d.image.png?v=1748550054524">
+  </div> 
+   <h1 class="center-title">Acting Work  </h1> 
+  
+ 
+  <div class="entire-gallery">
+    
+ 
+  <div class="row">
+     
+    <div class="image">
+<img class="image_img" src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/65b80ab4-bb3f-475f-a85a-3a6a4eb196bc.image.png?v=1748531438097">
+<div class="image__overlay">
+<div class="image__title"> The Winter's Tale
+</div>
+<p class="image__description">
+ Perdita: 2024
+</p>
+</div>
+</div>
+    
+    <div class="image">
+<img class="image_img" src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/7ed4a2b1-accb-47b7-a934-46fab327334f.image.png?v=1748551052634">
+<div class="image__overlay">
+<div class="image__title"> A Midsummer Night's Dream
+</div>
+<p class="image__description">
+ A Tipsy bacchanal 
+</p>
+</div>
+</div>
+    
+    <div class="image">
+<img class="image_img" src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/93d506cc-880d-4038-8122-5b2026c3fd24.image.png?v=1748529331769">
+<div class="image__overlay">
+<div class="image__title"> A Midsummer Night's Dream
+</div>
+<p class="image__description">
+ Tom Snout<br>(Wall): 2024
+</p>
+</div>
+</div> 
+    
+    <div class="image">
+<img class="image_img" src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/004a8eca-eaf2-43d9-aebf-ef1e58c675e4.image.png?v=1748529161731" >
+<div class="image__overlay">
+<div class="image__title"> A Midsummer Night's Dream
+</div>
+<p class="image__description">
+Cobweb: 2024
+</p>
+</div>
+</div> 
+   
+   
+  </div>
+  
+  
+  <div class="row">
+    
+    <div class="image">
+<img class="image_img" src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/b3c5b743-9d22-4abf-b35d-94648e706509.image.png?v=1748528875312" >
+<div class="image__overlay">
+<div class="image__title"> Richard II
+</div>
+<p class="image__description">
+A Murderer: 2023
+</p>
+</div>
+</div> 
+  
+    
+     <div class="image">
+<img class="image_img" src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/9987154b-4a2e-4de7-ad1e-b3eb8b6ba4c8.image.png?v=1748528959379" >
+<div class="image__overlay">
+<div class="image__title"> Richard II
+</div>
+<p class="image__description">
+Sir Stephen <br> Scroop: 2023
+</p>
+</div>
+</div>
+    
+   <div class="image">
+<img class="image_img" src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/0dc758c2-784b-4fdc-8aa9-5a5fb6d8ab31.image.png?v=1748525275102" >
+<div class="image__overlay">
+<div class="image__title">Much Ado About Nothing
+</div>
+<p class="image__description">
+Ursula: 2022
+</p>
+</div>
+</div> 
+    
+    <div class="image">
+<img class="image_img" src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/c2b1e901-af0f-4e76-b586-8cc6f9b0c061.image.png?v=1748524846327" >
+<div class="image__overlay">
+<div class="image__title">Twelfth Night
+</div>
+<p class="image__description">
+Fabian: 2021
+</p>
+</div>
+</div>
+    
+  </div>
+  
+  <div class="row">
+   
+    <div class="image">
+<img class="image_img" src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/075deed7-8644-4c08-a618-bd5c522fdc47.image.png?v=1748524325316" >
+<div class="image__overlay">
+<div class="image__title">A Midsummer Night's Dream
+</div>
+<p class="image__description">
+Peaseblossom: 2019
+</p>
+</div>
+</div>
+     
+    
+    <div class="image">
+<img class="image_img" src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/e0950104-bb5d-45fe-856c-975f2b554a8c.image.png?v=1748482618474" >
+<div class="image__overlay">
+<div class="image__title">Richard III</div>
+<p class="image__description">
+Prince Edward: 2019
+</p>
+</div>
+</div>
+    
+    <div class="image">
+<img class="image_img" src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/ce44df00-af76-4674-90ee-5de7811ea278.image.png?v=1747846103595" >
+<div class="image__overlay">
+<div class="image__title"> Richard III</div>
+<p class="image__description">
+Prince Edward: 2019
+</p>
+</div>
+</div>
+    
+<div class="image">
+<img class="image_img" src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/d870adef-9008-4407-bbbb-17422a93fbe6.image.png?v=1748523965691" >
+<div class="image__overlay">
+<div class="image__title">All's Well That Ends Well</div>
+<p class="image__description">
+Gentle Astringer: 2018
+</p>
+</div>
+</div>
+    
+  </div>
+  
+<div class="row">
+  
+ <div class="image">
+  <img class="image_img" src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/b5f10e9f-fe8c-4ecc-9f19-b261427f890d.image.png?v=1748481045557" >
+<div class="image__overlay">
+<div class="image__title">Henry IV, part 1</div>
+<p class="image__description">
+Francis: 2017
+</p>
+</div>
+</div>
+  
+   <div class="image">
+<img class="image_img" src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/cc98480e-9049-4af5-811e-b9639579b92d.image.png?v=1748481867955" >
+<div class="image__overlay">
+<div class="image__title">As You Like It</div>
+<p class="image__description">
+First Page: 2016
+</p>
+</div>
+</div> 
+
+
+<div class="image">
+  <img class="image_img" src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/0639b212-c051-4729-9266-edc04d5599a5.image.png?v=1748480644287" >
+<div class="image__overlay">
+<div class="image__title">As You Like It</div>
+<p class="image__description">
+First Page: 2016
+</p>
+</div>
+</div>
+
+  
+  <div class="image">
+<img class="image_img" src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/68115f86-9daa-4dbf-b45d-8e3fe7af746d.image.png?v=1748479682503" >
+<div class="image__overlay">
+<div class="image__title">The Merry Wives of Windsor</div>
+<p class="image__description">
+Boy: 2015
+</p>
+</div>
+    
+</div> 
+  </div>
+  </div> 
+  
+ 
+</body>
+</html>
+                            

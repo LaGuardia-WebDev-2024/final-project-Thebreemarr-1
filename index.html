@@ -16,96 +16,100 @@ Select ONE Additional Feature to Add
 <!DOCTYPE html>
 <html>
   <head>
+   
+    
+    <meta name="viewport" content="width=device-width, initial-scale=-100">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="utf-8" />
     <title>Final Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
-      /* Styling Only Related To THIS Page */
-      /*~~~~~ Taken From:
-      https://www.w3schools.com/howto/howto_css_parallax.asp*/
-      .parallax {
-        /* The image used */
-        background-image: url("https://cdn.glitch.global/66249578-345e-4e9c-8fac-cabe98f682e4/image0.jpeg?v=1747657278943");
-
-        /* Set a specific height */
-        min-height: 500px;
-
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      .textblock {
-        min-height: 500px;
-        background-color: black;
-        color: white;
-      }
-      .parent-flex {
+      
+      
+      
+      .entire-home-page {
+        position: fixed;
         display: flex;
-      }
-      .child-flex {
-        background-color: green;
         margin: 30px;
-        padding: 10px;
-        text-align: justify;
-        width: 40%;
       }
-      .para-1{
-        display: flex;
-        align-items: center;
+      .title-color {
+        position: absolute;
+        color: rgb(220, 65, 121);
+        font-size: 60px;
+        z-index: 3;
+        line-height: 80px;
+        left: -20%;
+      }
+
+      .white-box {
+        position: absolute;
+        background-color: white;
+        z-index: 2;
+        top: 217px;
+        width: 120%;
+        height: 300px;
+      }
+      .homepage-writing {
+        position: relative;
+        top: 50px;
+        margin: 60px;
+        margin-left: 60px;
+        width:40%;
+      }
+      .homepage-img {
+        position: relative;
+        z-index: 2;
+        left: 40%;
+        margin-top: 30px; 
+      
+        
+      }
+      .img  {
+        border-radius: 20px 100px 20px 100px; 
       }
     </style>
   </head>
   <body>
-    <!-- ⬆⬆⬆⬆ Nav Bar -->
     <ul class="nav">
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="aboutme.html">About Me</a></li>
-      <li><a href="art.html">Art</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li style="float: right">
+      <li><a class="active" href="index.html" id="home">Home</a></li>
+
+      <li style="float: right" class="blobimg">
         <a target="_blank" href=""
           ><img
-            src="https://www.getfocused.no/wp-content/uploads/2022/09/White-YouTube-Logo-Transparent.png"
-            style="width: 25px; margin: -5px"
+            src="https://mystickermania.com/cdn/stickers/animals/blobfish-512x512.png"
+            style="width: 45px; margin: -10px"
         /></a>
       </li>
-      <li style="float: right">
-        <a target="_blank" href=""
-          ><img
-            src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png"
-            style="width: 25px; margin: -5px"
-        /></a>
-      </li>
+
+      <li style="float: right"><a href="socialmedia.html">Social media</a></li>
+      <li style="float: right"><a href="websites.html">Websites</a></li>
+      <li style="float: right"><a href="actingwork.html">Acting Work</a></li>
+      <li style="float: right"><a href="aboutme.html">About Me</a></li>
     </ul>
-
-    <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>Ms. Hall | Web Dev 2024-2025</h1>
-    <div class="parallax"></div>
-
-    <div class="textblock parent-flex">
-      <div class="child-flex para-1">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
+    <div class="entire-home-page">
+      <div class="white-box">
+        <p class="homepage-writing">
+        Bree is a 17 year old drama major at LaGuardia Highschool, who loves to spend her time at the beach, hanging out with her family, making mini movies with her friends, acting in Shakepeare plays during the summer, and coding websites in Web Development class. She has accumulated a myriad of skills in her life such as writer, director, actor, guitarist, stop motion animator, painter, surfer, and expert juggler. Bree has a passion for  the entertainment industry along with her determination to conserve, explore, and enjoy the natural environment. 
+ 
         </p>
       </div>
-      <div class="child-flex">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
-        </p>
+
+      <div class="title">
+        <h1 class="title-color">
+          Bree <br />
+          Marr
+        </h1>
+      </div>
+
+      <div class="homepage-img">
+        <img class="img"
+          src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/c8b33ce3-a83e-4a2b-a7fb-81904fc96ea1.image.png?v=1747786743341" width="45%" 
+        />
       </div>
     </div>
   </body>

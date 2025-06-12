@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <script type="text/javascript" src="path-to-javascript-file.js"></script>
+    <meta charset="utf-8" />
+    <title>Final Project</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      
+      h1{
+        text-align: center; 
+        posiiton: absolute; 
+      }
+      body{
+        margin:0;
+        padding:0; 
+        box-sizing: border-box; 
+        
+      }
+      
+      .gallery{
+        width: 1200px;
+        display: flex; 
+        overflow-x: scroll;
+        margin: 15px;
+        padding:15px;
+        margin-top: 80px;
+        
+        
+      }
+      .gallery div {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px; 
+        padding: 10px; 
+        flex: none; 
+        padding:15px;
+        
+        
+      }
+      img{
+        width: 400px;
+        margin:6px;
+      }
+      .arrow{
+        width:50px;
+      }
+      .gallery div img{
+        width:100%;
+        filter: grayscale(20%);
+        transition: transform 0.5s;
+        opacity: 0.7;
+      }
+      .gallery::-webkit-scrollbar{
+        display: none;
+        
+      }
+      
+      .gallery-wrap{
+        display:flex; 
+        align-items: center; 
+        justify-content: center; 
+        margin: 5% auto;
+        margin-top: 150px;
+        
+      } 
+      #backarrow, #nextarrow{
+        width: 50px; 
+        cursor: pointer;
+        margin: 40px; 
+      }
+      .gallery div img:hover{
+        filter: grayscale(0);
+        cursor: pointer; 
+        transform: scale(1.1);
+        opacity: 1;
+        
+      }
+    
+      h4 {
+        text-align: center;
+        color: cornflowerblue; 
+        
+      } 
+      h5 {
+        color: rgb(82, 117, 234 );
+        text-align: center;
+      }
+      h2 {
+        color: rgb(82, 117, 234 );
+         
+      }
+      .shoutout-myqueen {
+        display: block;
+        width: 20% ;
+        
+        float: left; 
+        margin-left: 20px; 
+        margin-top: 20px;
+        margin-right: -300px;
+      }
+      .shoutout-text {
+        width: 300px;
+        align-items: center; 
+        margin: auto; 
+        
+      }
+      .mshall-image{
+        align-items: center; 
+        margin: auto;
+        display: flex; 
+        justify-content: center; 
+        border-radius: 30px;
+        padding: 10px; 
+        width:70%;
+         
+      }
+      .text {
+        color:rgb(82, 117, 234 );
+        font-size: 20px;
+        align-items: center; 
+        
+      }
+     
+    </style>
+  </head>
+  <body>
+    
+
+    <ul class="nav">
+      <li><a href="index.html" id="home">Home</a></li>
+
+      <li style="float: right" class="blobimg">
+        <a target="_blank" href=""
+          ><img
+            src="https://mystickermania.com/cdn/stickers/animals/blobfish-512x512.png"
+            style="width: 45px; margin: -10px"
+        /></a>
+      </li>
+
+      <li style="float: right"><a href="socialmedia.html">Social media</a></li>
+      <li style="float: right">
+        <a class="active" href="websites.html">Websites</a>
+      </li>
+      <li style="float: right"><a href="actingwork.html">Acting Work</a></li>
+      <li style="float: right"><a href="aboutme.html">About Me</a></li>
+    </ul>
+
+    <br />
+    <br />
+    <br>
+    <br>
+    <div class="shoutout-myqueen">
+      <div class="shoutout-text">
+        <span class="text">
+         Honorable mention to my wonderful web dev teacher, Ms Hall! ⭐️
+      </span>
+      </div>
+       
+      <div>
+         <img class="mshall-image" src=" https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/9fbc67eb-f074-40a7-9c03-e27d9b64a9a7.Photo%20on%205-13-25%20at%2011.08%E2%80%AFam.JPG?v=1748007688148"> 
+      </div>
+    </div>
+    
+    <h1>Websites I've built in Web Development...</h1>
+    
+    
+     
+    <div class="gallery-wrap">
+      <img id="backarrow" src="https://static.thenounproject.com/png/607543-200.png">
+      <div class="gallery">
+        <div>
+          <span>
+            <a target="_blank" href="https://laguardia-webdev-2024.github.io/Ms.Rabbit-9-p-unit-9-project-Thebreemarr/">
+            <img
+              src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/c823330f-2285-42f2-bda8-84be27dbadcb.image.png?v=1747960595719"
+                 /> </a> </span>
+          <span>
+            <a target="_blank" href="https://laguardia-webdev-2024.github.io/7-p-unit-7-project-Thebreemarr/">
+
+            <img
+              src=" https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/061f39c5-a7c4-4a28-bd92-97f51ec4dda6.image.png?v=1747960720498"
+          /> </a></span>
+          <span>
+            <a target="_blank" href="https://laguardia-webdev-2024.github.io/BeachyBree-unit-4-project/">
+            <img
+              src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/6347cd97-9622-4d84-978e-ec51420cb176.image.png?v=1747960761489"
+                 /></a> </span>
+        </div>
+        <div>
+          <span>
+            <a target="_blank" href="https://laguardia-webdev-2024.github.io/11-p-unit-11-project-Thebreemarr/">
+            <img
+              src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/1109a1a7-d1b5-4fc5-a052-d1de53154c3a.image.png?v=1747960901882">
+          </a></span>
+
+          <span>
+                <a target="_blank" href="https://laguardia-webdev-2024.github.io/8-p-unit-8-project-Thebreemarr/"> 
+            <img
+              src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/1d2c7161-81c4-4eaf-85a6-fcc3ab34531e.image.png?v=1747961102332"
+          /></a></span>
+          
+          <span>
+            <a target="_blank" href="https://laguardia-webdev-2024.github.io/5-p-unit-5-project-Thebreemarr/"> 
+            <img
+              src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/c1779803-40b2-4d23-a5b1-96ddcafe0e54.image.png?v=1747961200855"
+          /></a></span>
+        </div>
+        <div>
+         <span>
+            <a target="_blank" href="https://laguardia-webdev-2024.github.io/12-p-unit-12-project-Thebreemarr/"> 
+            <img
+              src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/ce60b110-00c9-48d1-b476-f82972b7bd6d.image.png?v=1747960997074"
+          /></a></span>
+          <span>
+            <a target="_blank" href="https://laguardia-webdev-2024.github.io/6-p-unit-6-project-js-Thebreemarr/"> 
+            <img
+              src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/b00b30ee-b101-4616-b225-616c1ca43c0d.image.png?v=1747961273098"
+          /></a></span>
+          <span>
+            <a target="_blank" href="https://laguardia-webdev-2024.github.io/10-p-unit-10-project-Thebreemarr/"> 
+            <img
+              src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/b5d7c336-78c5-4c99-b881-66c10f771827.image.png?v=1747961303828 "
+          /></a></span>
+        </div>
+        <div>
+          <span>
+            <a target="_blank" href="https://laguardia-webdev-2024.github.io/13-p-unit-13-project-Thebreemarr/"> 
+            <img
+              src=" https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/d96d4118-b5d0-4273-9511-b1a8e812b247.image.png?v=1747961526563"
+          /></a></span>
+          <span>
+            <a target="_blank" href=" https://laguardia-webdev-2024.github.io/2-p-unit-2-project-Thebreemarr/"> 
+            <img
+              src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/84d43e51-02b6-4963-a7b7-f30ce0bd709f.image.png?v=1747961357949"
+          /></a></span>
+          <span>
+            <a target="_blank" href="https://laguardia-webdev-2024.github.io/3-p-unit-3-project-Thebreemarr/"> 
+            <img
+              src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/8ee4c675-eb54-41c7-b22a-6415751d590e.image.png?v=1747961383420"
+          /></a></span>
+        </div>
+      </div>
+      <img id="nextarrow" src="https://cdn.glitch.global/425155d3-9d2c-4e72-acec-709fe3c38e7d/49e93926-d5f8-475d-ba65-a3e582df8c09.arrow%20pointing%20left.png?v=1747961991145">
+    </div>
+    
+    <script src="websites.js"> </script>
+    
+   
+  </body>
+</html>
